@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Train Schedule App</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets7/css7/style7.css">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+
+    <div class="container">
+
+      <br>
+      <div class="jumbotron">
+        <div class="row">
+
+          <!-- TITLE -->
+
+          <div id = "logo" class="col-lg-12 col-sm-12 col-xs-12">
+            <h1 class="text-center">Mystery Train Scheduler</h1>
+            <h3 class="text-center">View Current Schedule or Add a Train</h3>
+            <h4 class="text-center">Powered with:</h4>
+            <img src = 'assets7/images7/firebaselogo.png'>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CURRENT TRAIN -->
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+
+            <!-- Panel Title -->
+            <div class="panel-heading">
+              <h3 class="panel-title">Current Train Schedule</h3>
+            </div>
+            <div class="col-lg-12">
+        <h1 class="text-center clock-display">Current Time: <span id = "current-time" class = "clock-display"></span></h1>
+      </div>
+
+            <!-- Panel Body -->
+            <div class="panel-body">
+
+              <!-- Table of Train Schedule -->
+              <table class="table">
+
+                <!-- Table Header -->
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Frequency (min)</th>
+                  <th>Next Departure</th>
+                  <th>Minutes to Departure</th>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- ADD TRAIN -->
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+
+            <!-- Panel Title -->
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Add a Train</h3>
+            </div>
+            
+            <!-- Panel Body -->
+
+            <div class="panel-body">
+
+              <!-- Add a Train Form -->
+
+              <form role="form">
+
+                <!-- Train Name -->
+
+                <div class="form-group">
+                  <label for="text" style='color:silver';>Train Name</label>
+                  <input type="text" class="form-control" id="nameInput">
+                </div>
+                
+                <!-- Destination -->
+
+                <div class="form-group">
+                  <label for="text" style='color:silver';>Train Destination</label>
+                  <input type="text" class="form-control" id="destinationInput">
+                </div>
+        
+                <!-- First Train Time -->
+
+                <div class="form-group">
+                  <label for="text" style='color:silver';>First Departure for Today (Military Time - hh:mm)</label>
+                  <input type="text" class="form-control" id="firstArrivalInput">
+                </div>
+                
+                <!-- Frequency -->
+
+                <div class="form-group">
+                  <label for="text" style='color:silver';>Frequency of Departures (min)</label>
+                  <input type="number" class="form-control" id="frequencyInput">
+                </div>
+                
+                <!-- Submit Button (send to database) -->
+
+                <button type="submit" class="btn btn-default" id="addTrainButton">Submit</button>
+
+              </form>
+
+            </div>
+          </div>
+          <h5>&#169; Copyright 2016 Robert J. Kelly</h5></footer>
+        </div>    
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets7/javascript7/javascript7.js"></script>
+
+  </body>
+
+</html>

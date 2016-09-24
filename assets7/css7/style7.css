@@ -1,0 +1,87 @@
+body{
+  background: url('../images7/cabcar.jpg');
+  background-size: 100%;
+  height: 100%;
+  font-family: 'Cherry Cream Soda', cursive;
+}
+
+.jumbotron{
+  background-color: purple;
+  opacity: .80;
+  color: silver;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 5%;
+}
+
+#addTrainButton{
+  background-color: silver;
+  color: purple;
+}
+
+#logo{
+  background-color: purple;
+  color: silver;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 100%;
+}
+
+.panel-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: purple;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: purple;
+    opacity: .80;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.form-control{
+  color: purple;
+}
+
+.clock-display{
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+}
+
+img{
+  width: 200px;
+  height: auto;
+  margin: 5px 0 0 400px;
+}
+
+h3{ 
+  font-size: 30px;
+  color: silver;
+}
+
+h4{
+  font-size: 20px;
+  color: yellow;
+  margin: 5px 0 0 0;
+}
+
+h5{
+  font-size: 20px;
+  color: silver;
+  margin: 25px 0 0 375px;
+}
+
+th{
+  color: silver;
+  text-align: center;
+}
+
+td{
+  color: yellow;
+  text-align: center;
+}
