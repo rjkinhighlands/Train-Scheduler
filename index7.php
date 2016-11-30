@@ -1,1 +1,0 @@
-<?php require ("index7.html"); ?>
