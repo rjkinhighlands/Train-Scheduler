@@ -1,7 +1,5 @@
 # Train-Scheduler
  Firebase backed train schedule application
- 
-Objectives
 
 Created a Firebase backed train schedule application
 
